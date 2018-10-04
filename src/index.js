@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   animate(() => {
     const progress = 100 * yearProgress()
     bar.style.setProperty('width', `${progress}%`)
-    percentage.innerText = progress.toFixed(20)
+    percentage.innerText = progress.toFixed(10)
   })
 })
 
