@@ -26,7 +26,7 @@ body {
   align-items: center;
 }
 
-#progress-bar-container {
+.progress-bar-container {
   width: 80%;
   height: 42px;
   border: 2px solid var(--color);

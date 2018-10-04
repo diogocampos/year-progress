@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
   const bar = $('#progress-bar')
-  const percent = $('#progress-percent')
+  const percentage = $('#progress-percentage')
 
   animate(() => {
     const progress = 100 * yearProgress()
     bar.style.setProperty('width', `${progress}%`)
-    percent.innerText = progress.toFixed(20)
+    percentage.innerText = progress.toFixed(20)
   })
 })
 
