@@ -2,23 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const bar = $('#progress-bar')
   const percentage = $('#progress-percentage')
 
-  animate(() => {
+  setInterval(() => {
     const progress = 100 * yearProgress()
     bar.style.setProperty('width', `${progress}%`)
     percentage.innerText = progress.toFixed(10)
-  })
+  }, 1000 / 30)
 })
 
 const $ = selector => document.querySelector(selector)
-
-function animate(callback) {
-  let request = requestAnimationFrame(frame)
-  function frame(timestamp) {
-    request = requestAnimationFrame(frame)
-    callback(timestamp)
-  }
-  return () => cancelAnimationFrame(request)
-}
 
 function yearProgress() {
   const year = new Date().getFullYear()
