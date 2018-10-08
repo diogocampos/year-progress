@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const title = $('#title')
   const bar = $('#progress-bar')
   const percentage = $('#progress-percentage')
+
+  setInterval(() => {
+    title.innerText = new Date().getFullYear()
+  }, 1000)
 
   setInterval(() => {
     const progress = 100 * yearProgress()
