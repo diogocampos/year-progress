@@ -2,4 +2,4 @@
 
 A progress bar that moves faster than you'd like.
 
-Inspired by [@year_progress](https://twitter.com/year_progress).
+Inspired by [@year_progress](https://twitter.com/year_progress) on Twitter.
