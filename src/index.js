@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 1000 / 30)
 })
 
-const $ = selector => document.querySelector(selector)
+const $ = (selector) => document.querySelector(selector)
 
 function yearProgress() {
   const year = new Date().getFullYear()

@@ -1,12 +1,15 @@
 {
   "name": "year-progress",
   "private": true,
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel src/index.html --no-autoinstall --open",
-    "build": "rm -rf dist/* && parcel build src/index.html --public-url . --no-source-maps",
+    "start": "parcel --no-autoinstall --open",
+    "build": "rm -rf dist/* && parcel build --public-url . --no-source-maps",
     "deploy": "scripts/deploy"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.3"
+    "parcel": "^2.6.2",
+    "prettier": "2.7.1"
   }
 }
