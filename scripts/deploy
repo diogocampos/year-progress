@@ -4,6 +4,7 @@ set -e
 BUILD_DIR='dist'
 
 if [ ! -e "$BUILD_DIR"/.git ] ; then
+  rm -rf "$BUILD_DIR"
   git worktree add "$BUILD_DIR" gh-pages
 fi
 
