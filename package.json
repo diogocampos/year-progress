@@ -5,6 +5,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel --no-autoinstall --open",
+    "lint": "prettier --check .",
     "build": "rm -rf dist/* && parcel build --public-url . --no-source-maps",
     "deploy": "scripts/deploy"
   },
