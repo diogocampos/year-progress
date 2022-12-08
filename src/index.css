@@ -34,6 +34,10 @@ body {
   align-items: center;
 }
 
+#title {
+  font-size: 2.4em;
+}
+
 .progress-bar-container {
   width: 90%;
   height: 42px;
