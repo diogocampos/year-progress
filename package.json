@@ -10,7 +10,7 @@
     "deploy": "scripts/deploy"
   },
   "devDependencies": {
-    "parcel": "^2.8.1",
-    "prettier": "2.8.1"
+    "parcel": "^2.8.3",
+    "prettier": "^2.8.4"
   }
 }
