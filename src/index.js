@@ -19,8 +19,8 @@ const $ = (selector) => document.querySelector(selector)
 
 function getYearProgress() {
   const year = new Date().getFullYear()
-  const start = new Date(`${year}`)
-  const end = new Date(`${year + 1}`)
+  const start = new Date(year, 0) // 0 === January
+  const end = new Date(year + 1, 0)
   const percentage = 100 * ((Date.now() - start) / (end - start))
   return { year, percentage }
 }
